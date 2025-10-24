@@ -1,0 +1,178 @@
+<<<<<<< HEAD
+h1 {
+    font-size: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    color: #cccccc;
+    font-weight: bold;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+
+
+
+
+
+
+.gif {
+    text-align: center;
+    margin-right: 40px;
+    float: right;
+    
+}
+
+h2 {
+    font-size: 35px;
+    padding-left: 50px;
+    padding-top: 20px;
+    color: #cccccc;
+    margin-right: 100px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+p {
+    font-size: 30px;
+    padding-left: 60px;
+    color: #cccccc;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+body {
+    background-color: #0c0c0c;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+.nav {
+    padding-left: 50px;
+    font-size: 30px;
+    color: #cccccc;
+    white-space: pre;
+    
+}
+
+
+.nav h2 {
+    padding-left: 50px;
+    font-size: 40px
+    
+}
+
+.nav h3 {
+    padding-left: 50px;
+    font-size: 30px;
+    color: #cccccc;
+    
+}
+
+.nav li {
+    padding-left: 15px;
+    margin: 0;
+
+    list-style-type: none;
+    font-size: 35px;
+    
+}
+.nav a{
+    color: #cccccc;
+    text-decoration: none;
+    font-family: "Ubuntu Mono", monospace;
+    
+}
+
+.subnav {
+    white-space-collapse: collapse;
+    padding-left: 50px;
+    font-size: 30px;
+    color: #cccccc;
+=======
+h1 {
+    font-size: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    color: #cccccc;
+    font-weight: bold;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+
+
+
+
+
+
+.gif {
+    text-align: center;
+    margin-right: 40px;
+    float: right;
+    
+}
+
+h2 {
+    font-size: 35px;
+    padding-left: 50px;
+    padding-top: 20px;
+    color: #cccccc;
+    margin-right: 100px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+p {
+    font-size: 30px;
+    padding-left: 60px;
+    color: #cccccc;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+body {
+    background-color: #0c0c0c;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+.nav {
+    padding-left: 50px;
+    font-size: 30px;
+    color: #cccccc;
+    white-space: pre;
+    
+}
+
+
+.nav h2 {
+    padding-left: 50px;
+    font-size: 40px
+    
+}
+
+.nav h3 {
+    padding-left: 50px;
+    font-size: 30px;
+    color: #cccccc;
+    
+}
+
+.nav li {
+    padding-left: 15px;
+    margin: 0;
+
+    list-style-type: none;
+    font-size: 35px;
+    
+}
+.nav a{
+    color: #cccccc;
+    text-decoration: none;
+    font-family: "Ubuntu Mono", monospace;
+    
+}
+
+.subnav {
+    white-space-collapse: collapse;
+    padding-left: 50px;
+    font-size: 30px;
+    color: #cccccc;
+>>>>>>> 816ac04 (directory and bio website)
+}

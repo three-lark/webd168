@@ -1,17 +1,15 @@
-h1 {
-    font-size: 50px;
-    padding-left: 50px;
-    padding-top: 20px;
-    color: #cccccc;
-    font-weight: bold;
+body {
+    background-color: #0c0c0c;
     font-family: "Ubuntu Mono", monospace;
 }
 
-
-
-
-
-
+h1 {
+    font-size: 50px;
+    color: #cccccc;
+    font-weight: bold;
+    font-family: "Ubuntu Mono", monospace;
+    padding: 40px;
+}
 
 .gif {
     text-align: center;
@@ -21,12 +19,8 @@ h1 {
 }
 
 h2 {
-    font-size: 35px;
-    padding-left: 50px;
-    padding-top: 20px;
+    font-size: 30px;
     color: #cccccc;
-    margin-right: 100px;
-    margin-left: 10px;
     font-weight: bold;
     font-family: "Ubuntu Mono", monospace;
 }
@@ -38,24 +32,22 @@ p {
     font-family: "Ubuntu Mono", monospace;
 }
 
-body {
-    background-color: #0c0c0c;
-    font-family: "Ubuntu Mono", monospace;
-}
+
+
+
 
 .nav {
     padding-left: 50px;
     font-size: 30px;
     color: #cccccc;
-    white-space: pre;
     
 }
 
 
 .nav h2 {
     padding-left: 50px;
-    font-size: 40px
-    
+    font-size: 30px;
+    margin: 0;
 }
 
 .nav h3 {
@@ -68,9 +60,8 @@ body {
 .nav li {
     padding-left: 15px;
     margin: 0;
-
     list-style-type: none;
-    font-size: 35px;
+    font-size: 30px;
     
 }
 .nav a{
@@ -85,4 +76,20 @@ body {
     padding-left: 50px;
     font-size: 30px;
     color: #cccccc;
+}
+
+.subnav li::before {
+    content: "└────";
+}
+
+.nav h2::before {
+    content: "├──────";
+}
+.nav h3::before {
+    content: "├──────";
+}
+.subnav {
+  border-left: 2.5px solid #cccccc;
+  margin-left: 58px;
+  border-color: #cccccc;
 }
