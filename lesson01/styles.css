@@ -9,8 +9,8 @@ h1 {
 
 
 .gif {
-    text-align: center;
-    margin-right: 40px;
+    padding-right: 200px;
+    padding-top: 20px;
     float: right;
     
 }
@@ -44,4 +44,35 @@ body {
     color: #cccccc;
     
     
+}
+
+.nav li {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.back h2 {
+    font-size: 25px;
+    padding-left: 50px;
+    padding-top: 20px;
+    color: #cccccc;
+    margin-right: 100px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: "Ubuntu Mono", monospace;
+    text-decoration: none;
+}
+
+.back a:hover{
+    text-shadow: 0 0 5px #ffffff;
+    text-decoration: none;
+}
+
+.back a:visited, .back a:focus, .back a:active {
+    text-decoration: none;
+    color: #cccccc;
+}
+.back a {
+    text-decoration: none;
+    color: #cccccc;
 }
