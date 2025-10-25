@@ -7,6 +7,7 @@ h1 {
     font-family: "Ubuntu Mono", monospace;
 }
 
+
 .gif {
     text-align: center;
     margin-right: 40px;
@@ -41,42 +42,6 @@ body {
     padding-left: 50px;
     font-size: 30px;
     color: #cccccc;
-    white-space: pre;
     
-}
-
-
-.nav h2 {
-    padding-left: 50px;
-    font-size: 40px
     
-}
-
-.nav h3 {
-    padding-left: 50px;
-    font-size: 30px;
-    color: #cccccc;
-    
-}
-
-.nav li {
-    padding-left: 15px;
-    margin: 0;
-
-    list-style-type: none;
-    font-size: 35px;
-    
-}
-.nav a{
-    color: #cccccc;
-    text-decoration: none;
-    font-family: "Ubuntu Mono", monospace;
-    
-}
-
-.subnav {
-    white-space-collapse: collapse;
-    padding-left: 50px;
-    font-size: 30px;
-    color: #cccccc;
 }
