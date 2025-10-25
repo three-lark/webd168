@@ -9,8 +9,9 @@ h1 {
 
 
 .gif {
-    padding-right: 200px;
+    padding-right: 30px;
     padding-top: 20px;
+    margin-right: 400px;
     float: right;
     
 }
@@ -31,6 +32,7 @@ p {
     padding-left: 60px;
     color: #cccccc;
     font-family: "Ubuntu Mono", monospace;
+    margin-right: 400px;
 }
 
 body {
