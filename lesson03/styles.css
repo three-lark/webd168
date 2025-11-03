@@ -34,7 +34,7 @@ body {
     color: #333;
     margin-bottom: 30px;
 }
-
+/* Background images for each card */
 .card:first-of-type {
     background: #fff url(./images/pose1.png) no-repeat center right/150px;
 }
@@ -47,6 +47,8 @@ body {
     background: #fff url(./images/pose3.png) no-repeat center right/150px;
 }
 
+
+/* Styles for card button links */
 .card a {
     text-decoration: none;
     color: #fff;
@@ -55,7 +57,7 @@ body {
     font-size: 18px;
 }
 
-
+/* Background color for card button links */
 .card:first-of-type a {
     background-color: #e04555;
 }
