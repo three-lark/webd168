@@ -89,3 +89,8 @@ p {
   margin-left: 58px;
   border-color: #cccccc;
 }
+
+.padline {
+    display: inline-block;
+    width: 10px;
+}
