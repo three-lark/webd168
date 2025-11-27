@@ -8,45 +8,82 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono&display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
         
 </head>
-<body>
+    <body>
+        <div class="container my-4">
+        <div class="row justify-content-center">
+            <div class="col-md-5 col-sm-4">
+            <div class="window-card">
+                <!-- Title Bar -->
+                <div class="window-titlebar d-flex align-items-center">
+                <div class="window-buttons d-flex me-2">
+                    <span class="btn close"></span>
+                    <span class="btn minimize"></span>
+                    <span class="btn maximize"></span>
+                </div>
+                <span class="window-title flex-grow-1">C:\&gt;root\usr\amirs_website</span>
+                </div>
 
-    <div class="container">
-        <h1>C:\root\usr\Amirs_Website</h1>
+                <!-- Terminal Content -->
+                <div class="window-content p-0">
+                <div class="terminal-box">
+                    <h2>C:&gt;dir</h2>
+                    <ul class="list-unstyled">
+                    <li>10/20/2025 10:23 PM &nbsp;&nbsp;&nbsp; 792 &nbsp; aboutme.txt</li>
+                    <li>10/20/2025 09:58 PM &nbsp;&nbsp;&nbsp; 644 &nbsp; course.txt</li>
+                    <li>10/20/2025 09:58 PM &nbsp;&nbsp;&nbsp; 644 &nbsp; server.jpg</li>
+                    <li class="mt-2">3 file(s) &nbsp;&nbsp; 389,516 bytes</li>
+                    </ul>
 
-        <div class="gif-center mb-4">
-            <img src="csgo.gif" alt="csgo gif" class="img-fluid">
+                    <h2 class="mt-4">C:&gt;type aboutme.txt</h2>
+                    <p>Hello! My name is Amir and I'm an 18 year old cybersecurity student. I'm into tech, fashion, cars, and breaking things to figure out how they work!</p>
+
+                    <h2 class="mt-4">C:&gt;type course.txt</h2>
+                    <p>I have used HTML and CSS from a young age but never really looked at it as a real language. I hope I can understand how to make some good looking front end websites without using a template :)</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
         </div>
 
-        <div class="terminal-box mt-4">
-            <h2>C:&gt;dir</h2>
-            <ul class="list-unstyled">
-                <li>10/20/2025 10:23 PM &nbsp;&nbsp;&nbsp; 792 &nbsp; aboutme.txt</li>
-                <li>10/20/2025 09:58 PM &nbsp;&nbsp;&nbsp; 644 &nbsp; course.txt</li>
-                <li>10/20/2025 09:13 PM &nbsp;&nbsp; 388,080 &nbsp; <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ">RAT.exe</a></li>
-                <li class="mt-2">3 file(s) &nbsp;&nbsp; 389,516 bytes</li>
-            </ul>
+        
+        <div class="container my-4">
+        <div class="row justify-content-center g-3">
 
-            <h2 class="mt-4">C:&gt;type aboutme.txt</h2>
-            <p>Hello! My name is Amir and I'm an 18 year old cybersecurity student. I'm into tech, fashion, cars, and breaking things to figure out how they work!</p>
+            <!-- Window 1: Server -->
+            <div class="col-md-5 col-sm-6">
+            <div class="window-card">
+                <!-- Title Bar -->
+                <div class="window-titlebar d-flex align-items-center">
+                <div class="window-buttons d-flex me-2">
+                    <span class="btn close"></span>
+                    <span class="btn minimize"></span>s
+                    <span class="btn maximize"></span>
+                </div>
+                <span class="window-title flex-grow-1">server.jpg</span>
+                </div>
+                <!-- Content -->
+                <div class="window-content text-center p-0">
+                <img src="server.jpg" alt="server jpg" class="img-fluid">
+                </div>
+            </div>
+            </div>
 
-            <h2 class="mt-4">C:&gt;type course.txt</h2>
-            <p>I have used HTML and CSS from a young age but never really looked at it as a real language. I hope I can understand how to make some good looking front end websites without using a template :)</p>
-        </div>
-    </div>
+            </div>
+            </div>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
-    <canvas id="canvas"></canvas>
-    <script src="background.js"></script>
-</body>
-<canvas id="canvas"></canvas>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <canvas id="canvas"></canvas>
+        <script src="background.js"></script>
+    </body>
 </html>
