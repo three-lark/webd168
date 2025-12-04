@@ -1,0 +1,179 @@
+@use "sass:color";
+
+// ----------------------
+// Variables
+// ----------------------
+$font-main: "Ubuntu Mono", monospace;
+$bg-color: #0d0d0d;
+$terminal-bg: #111;
+$text-color: #00ff90;
+$link-color: #00c8ff;
+$link-hover: color.scale($link-color, $lightness: 40%); // updated
+$border-color: #00ff90;
+$shadow-color: #00ff90;
+
+// ----------------------
+// Global
+// ----------------------
+
+* {
+  font-family: $font-main;
+}
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: $font-main;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: $text-color;
+}
+
+.text-green {
+  color: $text-color !important;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+// ----------------------
+// Terminal-style container
+// ----------------------
+.terminal-box {
+
+
+  
+
+
+  position: relative;
+  z-index: 20;
+
+  padding: 2rem;
+  border-radius: 10px;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  background: rgba(0, 0, 0, 0.2); // transparent so blur shows
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+
+  h2 {
+    margin-top: 20px;
+    color: $text-color;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 5px;
+      color: $text-color;
+    }
+  }
+
+  p {
+    line-height: 1.5;
+    color: $text-color;
+  }
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+/* Matrix-style canvas background */
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;       // stays behind all content
+  pointer-events: none;  // doesn't block clicking
+}
+
+/* Center GIF in Bootstrap container */
+.gif-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 40px;
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.window-card {
+  width: 500px; // adjust as needed
+  border: 1px solid $terminal-bg;
+  border-radius: 6px;
+  overflow: show;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 1rem;
+
+  .window-titlebar {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    background: $terminal-bg;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    font-family: sans-serif;
+    font-size: 0.9rem;
+
+    .window-buttons {
+      display: flex;
+      gap: 6px;
+      margin-right: 10px;
+
+      .btn {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: inline-block;
+
+        &.close {
+          background: #ff5f56;
+        }
+
+        &.minimize {
+          background: #ffbd2e;
+        }
+
+        &.maximize {
+          background: #27c93f;
+        }
+      }
+    }
+
+    .window-title {
+      flex-grow: 1;
+      user-select: none;
+      color: $text-color;
+    }
+  }
+
+  .window-content {
+    img {
+      width: 100%;
+      display: block;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+  }
+}
