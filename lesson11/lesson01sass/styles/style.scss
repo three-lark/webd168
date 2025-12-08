@@ -23,7 +23,6 @@ body {
   background-color: $bg-color;
   color: $text-color;
   font-family: $font-main;
-  padding: 30px;
 }
 
 h1 {
@@ -45,10 +44,6 @@ img {
 // Terminal-style container
 // ----------------------
 .terminal-box {
-
-
-  
-
 
   position: relative;
   z-index: 20;
@@ -175,5 +170,110 @@ img {
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px;
     }
+  }
+}
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: $font-main;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+
+.terminal-box {
+  position: relative;
+  z-index: 20;
+  padding: 2rem;
+  border-radius: 10px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+
+  h2 {
+    margin-top: 20px;
+    color: $text-color;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 5px;
+      color: $text-color;
+    }
+  }
+
+  p {
+    line-height: 1.5;
+    color: $text-color;
+  }
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+      color: color.scale($link-color, $lightness: 40%);
+    }
+  }
+}
+
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+.gif-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+            body {
+                padding: 30px;
+            }
+        }
+
+@media (min-width: 300px) {
+  .terminal-box ul li {
+    font-size: 1rem;
+    }
+  .terminal-box h2 {
+    font-size: 1.5rem;
+    }
+  .terminal-box {
+    padding: 2rem;
+    }
+  .window-titlebar {
+    font-size: 0.9rem;
+    }
+  .window-buttons .btn {
+                width: 25px;
+                height: 25px;
   }
 }
