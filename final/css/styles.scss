@@ -168,12 +168,15 @@ nav {
 
 /* Hero Lander */
 .hero-lander {
+  margin-left: 2rem;
   min-height: calc(100vh - 12.5rem);
   display: flex;
   align-items: center;
-  padding: var(--spacing-lg) var(--spacing-md);
+  justify-content: space-between;
+  padding: var(--spacing-lg) var(--spacing-xl);
   position: relative;
   overflow: hidden;
+  flex-wrap: wrap;
 
   &::before {
     content: '';
@@ -237,6 +240,29 @@ nav {
     .btn {
       display: inline-block;
     }
+  }
+}
+
+.hero-lander-headshot {
+  margin-right: 15rem;
+  width: 28rem;
+  height: 28rem;
+  overflow: hidden;
+  position: relative;
+  border: 0.125rem solid var(--color-black);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  z-index: 9999;
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0.5rem 0.5rem 0 var(--color-black);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -483,11 +509,12 @@ nav {
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.0625rem;
+      z-index: 1;
     }
   }
 
   h3 {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: var(--spacing-sm);
     text-transform: uppercase;
@@ -498,6 +525,23 @@ nav {
     color: var(--color-darkgrey);
     margin-bottom: var(--spacing-sm);
     line-height: 1.6;
+  }
+}
+
+.project-image {
+  width: calc(100% + var(--spacing-md) * 2);
+  margin: calc(var(--spacing-md) * -1);
+  margin-bottom: var(--spacing-md);
+  overflow: hidden;
+  background: var(--color-gray);
+  border-bottom: 0.125rem solid var(--color-black);
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
   }
 }
 
@@ -886,6 +930,7 @@ footer {
   .hero-lander {
     min-height: auto;
     padding: var(--spacing-md);
+    flex-direction: column-reverse;
 
     &-content {
       h1 {
@@ -896,6 +941,13 @@ footer {
       .hero-subheadline {
         font-size: 1rem;
       }
+    }
+
+    &-headshot {
+      width: 18rem;
+      height: 18.5rem;
+      margin-bottom: var(--spacing-md);
+      margin-right: 0;
     }
   }
 
@@ -1002,6 +1054,20 @@ footer {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: var(--spacing-sm);
+  }
+
+  .project-image {
+    width: calc(100% + var(--spacing-sm) * 2);
+    margin: calc(var(--spacing-sm) * -1);
+    margin-bottom: var(--spacing-sm);
+
+    img {
+      aspect-ratio: 4 / 3;
+    }
   }
 
   .contact-grid {
