@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <nav>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul>
+      <li>
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+      <li>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+      </li>
+      <li>
+        <a href="contact.html" class="nav-link cta">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ================= PAGE ================= -->
+  <main id="portfolio" class="page active">
+
+    <!-- ===== Skills ===== -->
+    <h2 class="section-title">Skills & Technologies</h2>
+
+    <table class="skills-table">
+      <thead>
+        <tr>
+          <th>Icon</th>
+          <th>Technology</th>
+          <th>Proficiency</th>
+          <th>Experience</th>
+          <th>Projects</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Icon"><img src="images/html-icon.png" alt="HTML5" class="skill-icon"></td>
+          <td data-label="Technology">HTML5</td>
+          <td data-label="Proficiency"><span class="skill-level expert">Advanced</span></td>
+          <td data-label="Experience">5+ years</td>
+          <td data-label="Projects">15+</td>
+        </tr>
+        <tr>
+          <td data-label="Icon"><img src="images/css-icon.png" alt="CSS/SASS" class="skill-icon"></td>
+          <td data-label="Technology">CSS / SASS</td>
+          <td data-label="Proficiency"><span class="skill-level">Intermediate</span></td>
+          <td data-label="Experience">3+ years</td>
+          <td data-label="Projects">15+</td>
+        </tr>
+        <tr>
+          <td data-label="Icon"><img src="images/python-icon.png" alt="Python" class="skill-icon"></td>
+          <td data-label="Technology">Python</td>
+          <td data-label="Proficiency"><span class="skill-level">Intermediate</span></td>
+          <td data-label="Experience">2+ years</td>
+          <td data-label="Projects">15+</td>
+        </tr>
+        <tr>
+          <td data-label="Icon"><img src="images/linux-icon.png" alt="Linux" class="skill-icon"></td>
+          <td data-label="Technology">Linux / Bash</td>
+          <td data-label="Proficiency"><span class="skill-level">Intermediate</span></td>
+          <td data-label="Experience">2+ years</td>
+          <td data-label="Projects">20+</td>
+        </tr>
+         <tr>
+          <td data-label="Icon"><img src="images/router-icon.png" alt="Networking" class="skill-icon"></td>
+          <td data-label="Technology">Networking</td>
+          <td data-label="Proficiency"><span class="skill-level basic">Proficient</span></td>
+          <td data-label="Experience">2+ years</td>
+          <td data-label="Projects">5+</td>
+        </tr>
+        <tr>
+          <td data-label="Icon"><img src="images/js-icon.png" alt="JavaScript" class="skill-icon"></td>
+          <td data-label="Technology">JavaScript</td>
+          <td data-label="Proficiency"><span class="skill-level basic">Proficient</span></td>
+          <td data-label="Experience">2+ years</td>
+          <td data-label="Projects">10+</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ===== Projects ===== -->
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card featured">
+        <h3>J46 Consulting</h3>
+        <p>
+          AI Automation System built on top of Node.js developed for a turf solutions company to automate sales intake, order processing, and customer follow-up. A frontend order form connects to a backend N8n agent that updates the company's CRM system and sends automated emails to customers greatly reducing manual work and data entry for the sales team.
+        </p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">N8n</span>
+        </div>
+      </article>
+
+      <article class="project-card featured">
+        <h3>Proxmox Virtualization & Home Lab</h3>
+        <p>
+          Virtualized Home Lab built on Proxmox VE, used to host multiple Linux virtual machines for networking, automation, and cybersecurity practice. The enviroment includes a Wazuh based SIEM ingesting Windows and Linux logs, a Splunk instance for log analysis, and a Grafana dashboard for monitoring.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Linux</span>
+          <span class="tag">Proxmox</span>
+          <span class="tag">SIEM</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>Offensive Security Labs & Writeups</h3>
+        <p>
+          Hands-on offensive security labs focused on real-world attack paths, documented through structured writeups. Labs include reconnaissance, service enumeration, web exploitation, credential attacks, and Linux privilege escalation. Emphasis is placed on attacker methodology, tool usage, and understanding how misconfigurations lead to compromise.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Offensive Security Fundamentals</span>
+          <span class="tag">Web exploitation & enumeration</span>
+          <span class="tag">Linux privilege escalation</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>Linux Systems & Networking Practice</h3>
+        <p>
+          Practical Linux systems and networking work involving Arch, Kali, and Ubuntu environments. Includes OS installation, disk encryption, bootloader configuration, network troubleshooting, VPN connectivity issues, and command-line–driven system management. Focused on understanding system internals rather than GUI-based workflows.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Linux systems administration</span>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Amir Lahlou. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/three-lark" target="_blank" aria-label="GitHub">GH</a>
+        <a href="https://linkedin.com/in/amirlahlou" target="_blank" aria-label="LinkedIn">in</a>
+        <a href="mailto:amirlahlouu@gmail.com" aria-label="Email">@</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
